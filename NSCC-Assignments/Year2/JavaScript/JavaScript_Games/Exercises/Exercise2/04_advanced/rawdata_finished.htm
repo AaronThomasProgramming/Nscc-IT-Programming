@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Accessing Raw Pixel Data</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				var k = document.getElementById('Canvas1');
+				if (k && k.getContext) {
+					var o = k.getContext("2d");
+					if (o) {
+						// draw an image directly onto the canvas at the top left
+						var w = document.getElementById("img1");
+						//copy image into canvas
+						o.drawImage(w, 0, 0, o.canvas.width, o.canvas.height);
+
+						// get the image data and convert every 15th row to
+						// a 5-row strip of inverted pixels
+						//track current row & max row
+						var a = 0, Max = o.canvas.height - 1;
+						//retrieve imgae data from canvas by the specified coordinates
+						//get pixels from canvas
+						var s = o.getImageData(0, 0, o.canvas.width, o.canvas.height);
+						//get raw pixels from the image data property
+						var r = s.data;
+
+						while (a < Max) {
+							//gets bytes from row and inverts pixels by subtrating the byte color
+							var bytes = a * o.canvas.width * 4;
+							for (var j = 0; j < o.canvas.width * 4; j += 4) {
+								//
+								r[bytes + j] = 255 - r[bytes + j]; // red
+								r[bytes + j + 1] = 255 - r[bytes + j + 1]; // green
+								r[bytes + j + 2] = 255 - r[bytes + j + 2]; // blue
+							}
+							a++;
+						}
+						// put the modified data back into the canvas
+						//at the given coordinates with the image data clipped to it
+						o.putImageData(s, 0, 0, 100, 100, o.canvas.width - 200, o.canvas.height - 200);
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Accessing Raw Pixel Data</h1>
+		<div id='content'>
+			<p>A very powerful feature of the canvas API is the ability to directly access the individual r of the image. This
+				demo shows how to retrieve the pixel data from a canvas, manipulate it, and put it back into the canvas.</p>
+			<canvas id="Canvas1" width="715" height="315">Your browser does not support canvas.</canvas>
+
+			<!-- source images used in this example -->
+			<img id="img1" src="images/tulips.jpg" width="715" height="315">
+		</div>
+	</body>
+</html>

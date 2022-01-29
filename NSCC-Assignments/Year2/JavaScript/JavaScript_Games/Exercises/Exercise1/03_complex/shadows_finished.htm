@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Shadows</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var q = document.getElementById('Canvas1');
+				if (q && q.getContext) {
+					var w = q.getContext("2d");
+					if (w) {
+						// set up our basic shadow settings
+						//color for drawing a shadow
+						w.shadowColor = "#000000";
+						//horizontal shadow offset
+						w.shadowOffsetX = 10;
+						//vertical shadow offset
+						w.shadowOffsetY = 10;
+						//amount of blur applied to shadow
+						w.shadowBlur = 10;
+
+						// draw a simple rectangle with a shadow effect
+						w.fillStyle = "rgba(0,0,255,1)";
+						w.fillRect(20, 20, 200, 100);
+
+						var theString = "Drawing Text on a Canvas";
+						// draw the string with some font information
+						// change the shadow settings to be a bit lighter
+						w.fillStyle = "green";
+						//color for drawing a shadow
+						w.shadowColor = "rgba(0,100,100,0.5)";
+						//horizontal shadow offset
+						w.shadowOffsetX = 5;
+						//vertical shadow offset
+						w.shadowOffsetY = 5;
+						//amount of blur applied to shadow
+						w.shadowBlur = 5;
+						w.font = "25pt Georgia";
+						w.fillText(theString, 250, 75);
+
+						// draw a red line with a purplish shadow
+						w.lineCap = "round";
+						w.lineWidth = 25;
+						//color for drawing a shadow
+						w.shadowColor = "rgba(150,0,150,0.75)";
+						//amount of blur applied to shadow
+						w.shadowBlur = 15;
+						w.strokeStyle = "red";
+						w.beginPath();
+						w.moveTo(50, 200);
+						w.lineTo(450, 200);
+						w.stroke();
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Shadows</h1>
+		<div id="content">
+			<p>All drawing operations can produce shadows. This example shows how to make shadows on a variety of canvas operations.</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

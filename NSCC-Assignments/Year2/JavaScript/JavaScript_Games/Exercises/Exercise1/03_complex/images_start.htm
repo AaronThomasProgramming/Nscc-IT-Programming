@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Images</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+					if (ctx) {
+						var srcImg = document.getElementById("img1");
+						// TODO: draw an image directly onto the canvas at the top left
+
+
+						// TODO: draw the image scaled down onto the canvas
+
+
+						// TODO: draw just a portion of the source image onto the canvas
+
+
+						// TODO: draw the video onto the canvas. We need to request animation frames
+						// in order to grab each frame from the video and paint it onto the canvas.
+						// function drawVidFrame() {
+						// 	var theCanvas = document.getElementById('Canvas1');
+						// 	var ctx = theCanvas.getContext("2d");
+						// 	var srcVid = document.getElementById("vid1");
+						// }
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Images</h1>
+		<div id="content">
+			<p>Images can be drawn directly onto a canvas element in a variety of ways. Your code can drawn an image directly from an
+				IMG or VIDEO element that is already in the page or loaded dynamically via script, or another canvas element can be used
+				as a source image.</p>
+			<canvas id="Canvas1" width="715" height="315">Your browser does not support canvas.</canvas>
+
+			<!-- source images used in this example -->
+			<img id="img1" src="images/emerald_bay.jpg" width="715" height="315" style="display:none;">
+			<video id="vid1" src="video/podcast_teaser.mp4" style="display:none"></video>
+			<button onclick="document.getElementById('vid1').play()">Play</button>
+		</div>
+	</body>
+</html>

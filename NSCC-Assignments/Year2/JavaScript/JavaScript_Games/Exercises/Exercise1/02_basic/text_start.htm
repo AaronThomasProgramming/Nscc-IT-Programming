@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Text</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+					if (ctx) {
+						var ctx = theCanvas.getContext("2d");
+						if (ctx) {
+							var theString = "Drawing Text on a Canvas";
+
+							// TODO: draw the string with some font information
+
+
+							// TODO: draw the string with a fillStyle color
+
+
+							// TODO: draw the string with both a stroke and a fill with some opacity setting
+
+
+							// TODO: use measureText to draw a line under the text
+						}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Text</h1>
+		<div id="content">
+			<p>This example will draw arcs, both open and closed</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

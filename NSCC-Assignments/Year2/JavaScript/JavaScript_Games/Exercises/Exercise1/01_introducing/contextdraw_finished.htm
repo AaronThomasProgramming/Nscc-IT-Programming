@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Into the 2D Context</title>
+		<style type="text/css">
+		/* define canvas style so you can see it on page */
+			#Canvas {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var canvas = document.getElementById('Canvas');
+				/*get reference and check if not null and that the element has a method called getContext*/
+				if (canvas && canvas.getContext) {
+					// change the width and height of the canvas
+					canvas.width = 150;
+					canvas.height = 150;
+
+					//draw and fill the canvas with a light blue background
+					//call get context to get the 2d api
+					var c = canvas.getContext("2d");
+					//check if you have context
+					if (c) {
+						c.fillStyle = "lightBlue";
+						c.strokeStyle = "blue";
+						c.lineWidth = 5;
+						c.fillRect(0, 0, c.canvas.width, c.canvas.height);
+						c.strokeRect(0, 0, c.canvas.width, c.canvas.height);
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Into the 2D Context</h1>
+		<div id="content">
+			<p>After retrieving the canvas context, you can use the drawing methods to create content.</p>
+			<p>This simple example resizes the canvas using width and height properties and then fills the background with a light blue
+				color.
+			</p>
+			<canvas id="Canvas" width="400" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

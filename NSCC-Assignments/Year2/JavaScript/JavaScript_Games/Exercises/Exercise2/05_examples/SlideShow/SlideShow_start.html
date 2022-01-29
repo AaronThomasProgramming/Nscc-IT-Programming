@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Canvas Image Rotator Example</title>
+		<link rel="stylesheet" href="../../style.css" />
+		<script type="text/javascript">
+			//array of all images that appear in slide show
+			var imageP = [
+				"images/j0149014.jpg", "images/j0149024.jpg", "images/j0149029.jpg", "images/j0178677.jpg"
+			];
+			var showC = null;
+			var showCTX = null;
+			//element to hold the source of each image
+			var imgC = document.createElement("imgC");
+			var currentImg = 0;
+			var imageDelay = 3000; // ms to show each image for
+			//function get reference to the canvas and the drawing context
+			//then sets the size of the image to be the same size as the canvas
+			function init() {
+				// get a reference to the canvas and drawing context
+				showC = document.getElementById('showC');
+				showCTX = showC.getContext('2d');
+
+				// set the width and height of the imgC element to match image dimensions
+				imgC.setAttribute('width', '600');
+				imgC.setAttribute('height', '400');
+
+				// show the initial image
+				switchImages();
+
+				// start the animation
+				//change each image every 3 seconds
+				setInterval(switchImages, imageDelay);
+			}
+			//change each image
+			function switchImages() {
+				// TODO: get the next image in the array
+				//get current image from index
+				imgC.setAttribute('src', imageP[currentImg++]);
+				//reset to first image 
+				if (currentImg >= imageP.length)
+					currentImg = 0;
+				//draw image on to canvas
+				showCTX.drawImage(imgC,0,0,600,400);
+
+			}
+		</script>
+	</head>
+	<body onload='init()'>
+		<h1>Using canvas for an image slideshow</h1>
+		<div id='content'>
+			<canvas id='showC' width='600' height='400'>
+				Canvas Not Supported
+			</canvas>
+		</div>
+	</body>
+</html>

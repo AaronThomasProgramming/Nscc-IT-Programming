@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Arcs</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+					if (ctx) {
+						// TODO: Set up some drawing context settings
+						ctx.strokeStyle = "blue";
+						ctx.fillStyle = "red";
+						ctx.lineWidth = 5;
+
+						// TODO: stroke a quarter arc
+
+						// TODO: stroke a half arc, going anti-clockwise
+
+						// TODO: stroke and fill a circle
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Arcs</h1>
+		<div id="content">
+			<p>This example will draw arcs, both open and closed</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Canvas Image Rotator Example</title>
+		<link rel="stylesheet" href="../../style.css" />
+		<script type="text/javascript">
+		//array of all images that appear in slide show
+			var imageP = [
+				"images/j0149014.jpg", "images/j0149024.jpg", "images/j0149029.jpg", "images/j0178677.jpg"
+			];
+			var showC = null;
+			var showCTX = null;
+			//element to hold the source of each image
+			var image = document.createElement("image");
+			var currentImg = 0;
+			var timer;
+			var alphaG = 0.1;
+			//timestamp for reveal image function to control fade speed
+			var when = null;
+			var fDelay = 50; // ms to delay for each alphaG increment
+			var iDelay = 3000; // ms to show each image for
+			//function get reference to the canvas and the drawing context
+			//then sets the size of the image to be the same size as the canvas
+			function init() {
+				// get a reference to the canvas and drawing context
+				showC = document.getElementById('showC');
+				showCTX = showC.getContext('2d');
+
+				// set the width and height of the image element to match image dimensions
+				image.setAttribute('width', '600');
+				image.setAttribute('height', '400');
+
+				// show the initial image
+				switchImage();
+
+				// start the animation
+				setInterval(switchImage, iDelay);
+			}
+			//change each image
+			function switchImage() {
+				// get the next image in the array
+				image.setAttribute('src', imageP[currentImg++]);
+				//reset to first image 
+				if (currentImg >= imageP.length) {
+					currentImg = 0;
+				}
+
+				// reset the global alphaG and slowly ramp it up
+			 alphaG = 0.0;
+				requestAnimationFrame(revealImage);
+			}
+
+			function revealImage(timestamp) {
+				//check to see how much time has elapsed between calls to revealImage 
+				//before the alphaG value changes.
+				if (!when) {
+					when = timestamp;
+				}
+				//If the amount of time between calls is greater than the delay value
+				//increment the alphaG value by a .01 and then draw the image.
+				if ((timestamp - when) > fDelay) {
+				 alphaG += 0.01;
+					showCTX.globalAlpha = alphaG;
+					//draw image on to canvas
+					showCTX.drawImage(image, 0, 0, 600, 400);
+					when = timestamp;
+				}
+				//keep calling revealImage until the image has fully faded in to keep the 
+				//animation going
+				if  (alphaG < 1.0) {
+					requestAnimationFrame(revealImage);
+				}
+			}
+		</script>
+	</head>
+
+	<body onload='init()'>
+		<h1>Creating a Smooth Slideshow with Canvas</h1>
+		<p>This example uses a canvas element and animation to achieve a smooth image reveal effect</p>
+		<div id='content'>
+			<canvas id='showC' width='600' height='400'>
+				Canvas Not Supported
+			</canvas>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Bezier and Quadratic Curves</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var c = document.getElementById('Canvas1');
+				//set the fill and stroke styles, and the line width.
+				//retrieve the drawing context,
+				if (c && c.getContext) {
+					//get2d api
+					var v = c.getContext("2d");
+					if (v) {
+						v.strokeStyle = "blue";
+						v.lineWidth = 5;
+
+						// stroke a simple bezier curve
+						v.beginPath();
+						v.moveTo(50, 200);
+						//draw bezel curve at the starting position using control points 
+						//in the bezierCurveTo() function
+						v.bezierCurveTo(50, 100, 200, 100, 200, 150);
+						v.stroke();
+						// now make the control points visible
+						v.strokeStyle = "rgba(0,0,0,.25)";
+						v.lineWidth = 1;
+						v.beginPath();
+						v.moveTo(50, 200);
+						v.lineTo(50, 100);
+						v.lineTo(200, 100);
+						v.lineTo(200, 150);
+						v.stroke();
+
+						// stroke a quadratic curve
+						v.strokeStyle = "green";
+						v.lineWidth = 5;
+						v.beginPath();
+						v.moveTo(400, 200);
+						//draw quadratic curve at the starting position using control points 
+						//in the bezierCurveTo() function
+						v.quadraticCurveTo(400, 100, 600, 150);
+						v.stroke();
+						// now make the control points visible
+						v.strokeStyle = "rgba(0,0,0,.25)";
+						v.lineWidth = 1;
+						v.beginPath();
+						v.moveTo(400, 200);
+						v.lineTo(400, 100);
+						v.lineTo(600, 150);
+						v.stroke();
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Bezier and Quadratic Curves</h1>
+		<div id="content">
+			<p>This example will draw bezier and quadratic curves, along with their control points so you can see how the curve is affected
+				by the control point.</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

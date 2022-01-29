@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Rectangles</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var theCanvas = document.getElementById('Canvas1');
+				if (theCanvas && theCanvas.getContext) {
+					var ctx = theCanvas.getContext("2d");
+					if (ctx) {
+						// TODO: draw just a stroked rectangle
+
+						// TODO: draw just a filled rectangle
+
+						// TODO: draw a stroked and filled rectangle
+
+						// TODO: clear a rectangle
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Rectangles</h1>
+		<div id="content">
+			<p>This example will draw several styles of rectangles</p>
+			<canvas id="Canvas1" width="500" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Saving and Restoring Canvas State</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var d = document.getElementById('Canvas1');
+				//The context state keeps track of various global settings,
+				//such as the lineWidth, strokeStyle, fillStyle,etc
+
+				//drawing contexts are maintained as a stack and can be saved with the save() function
+				// or restored to a previous stack item with the restore() function
+				if (d && d.getContext) {
+					var c = d.getContext("2d");
+					if (c) {
+						// set up some drawing information
+						c.strokeStyle = "red";
+						c.fillStyle = "yellow";
+						c.lineWidth = 10;
+
+						// draw the first Rectangle
+						c.fillRect(25, 25, 100, 125);
+						c.strokeRect(25, 25, 100, 125);
+
+						// now, draw another rectangle with different settings
+						c.save(); // this will save the current settings
+
+						c.strokeStyle = "green";
+						c.fillStyle = "blue";
+						c.lineWidth = 5;
+						c.fillRect(175, 25, 100, 125);
+						c.strokeRect(175, 25, 100, 125);
+
+						c.restore(); // now restore the original settings
+
+						// draw a stroked and filled rectangle
+						c.fillRect(325, 25, 100, 125);
+						c.strokeRect(325, 25, 100, 125);
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Saving and Restoring the Canvas State</h1>
+		<div id="content">
+			<p>This example shows how to manage the canvas state using save() and restore()</p>
+			<canvas id="Canvas1" width="500" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

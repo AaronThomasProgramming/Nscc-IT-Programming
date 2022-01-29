@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Arcs</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var canvas = document.getElementById('Canvas1');
+				if (canvas && canvas.getContext) {
+					var c = canvas.getContext("2d");
+					if (c) {
+						//arc(x, y, radius, startAngle, endAngle [, antiClockwise])
+						// the center point is given by the x, y and radius. 
+						//The start- and endAngle arguments indicates where the arc starts and stops.
+						// clockwise determines should the arc be drawn clockwise or counterclockwise 
+
+						// Set up some drawing context settings
+						c.strokeStyle = "blue";
+						c.fillStyle = "red";
+						c.lineWidth = 5;
+
+						// stroke a quarter arc
+						//start a path
+						c.beginPath();
+						c.arc(50, 150, 100, 0, 0.5 * Math.PI);
+						//stroke the path
+						c.stroke();
+
+						// stroke a half arc, going anti-clockwise
+						//start a path
+						c.beginPath();
+						c.arc(300, 150, 100, 0, Math.PI, true);
+						//stroke the path
+						c.stroke();
+
+						// stroke and fill a circle
+						//start a path
+						c.beginPath();
+						c.arc(550, 150, 100, 0, 2 * Math.PI);
+						//stroke fill the path
+						c.fill();
+						c.stroke();
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Arcs</h1>
+		<div id="content">
+			<p>This example will draw arcs, both open and closed</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Patterns</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var j = document.getElementById('Canvas1');
+				if (j && j.getContext) {
+					var d = j.getContext("2d");
+					if (d) {
+						// create a pattern from an image
+						var s = new Image();
+						//function that gets called when the image loads
+						s.onload = function () {
+							//Repeat an image both horizontally and vertically:
+							d.fillStyle = d.createPattern(s, "repeat");
+							d.fillRect(0,0,d.canvas.width,d.canvas.height);
+						}
+						//get image from source property
+						s.src = "images/classic_car.jpg";
+
+						// create a pattern from a video
+						//create timeout to wait 5 seconds  to grab video as pattern
+						setTimeout(function () {
+							var e = document.getElementById('vidEl');
+							var j = document.getElementById('Canvas1');
+							var d = j.getContext("2d");
+							//Repeat an image both horizontally and vertically:
+							var aa = d.createPattern(e, "repeat");
+							//set fill and style to video
+							d.fillStyle = aa;
+							d.fillRect(0, 0, d.canvas.width, d.canvas.height);
+						}, 5000);
+
+						// create a pattern from another canvas
+						var bb = document.getElementById('patCan');
+						var oo = bb.getContext("2d");
+						// draw a line in the canvas
+						oo.strokeStyle = "red";
+						oo.lineWidth = 1;
+						oo.beginPath();
+						oo.moveTo(0, 0);
+						oo.lineTo(25, 25);
+						oo.stroke();
+
+						// now use that canvas as a pattern
+						//Repeat an image both horizontally and vertically:
+						var oio = d.createPattern(bb, "repeat");
+						//use pattern as a stroke
+						d.strokeStyle = oio;
+						d.lineWidth = 25;
+						d.strokeRect(50, 50, 200, 200);
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Patterns</h1>
+		<div id="content">
+			<p>Patterns can be created from images, videos, or even other canvas elements.</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+			<canvas id="patCan" width="25" height="25"></canvas>
+			<video id="vidEl" src="video/podcast_teaser.mp4" autoplay controls></video>
+		</div>
+	</body>
+</html>

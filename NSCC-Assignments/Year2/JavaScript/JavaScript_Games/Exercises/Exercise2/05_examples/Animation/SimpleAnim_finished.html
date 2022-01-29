@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+		<title>Canvas Test With No Buffering</title>
+		<link rel="stylesheet" href="../../style.css" />
+		<script type="text/javascript">
+			//dimension and starting point for rect
+			var rY = 200, rW = 40;
+			var rX = -rW;
+			var canvas = null;
+			var ct = null;
+
+			function start() {
+				canvas = document.getElementById('testCanvas');
+				ct = canvas.getContext("2d");
+
+				erase();
+
+				// draw the initial state of the canvas
+				ct.fillStyle = "yellow";
+				ct.fillRect(rX, rY, rW, rW);
+
+				// start the animation by requesting a time slice
+				// to draw the scene updates
+				requestAnimationFrame(an)
+			}
+			//draw background of the canvas
+			function erase() {
+				// erase the canvas before each update cycle
+				ct.fillStyle = "#00ddee";
+				ct.fillRect(0, 0, ct.canvas.width, ct.canvas.height);
+			}
+			//animate the rect by erasing the canvas and update the position of the square
+			//draw rect in its new place
+			function an(timestamp) {
+				// while the object is still within the canvas, move it by a small amount
+				if (rX < ct.canvas.width) {
+					//erase canvas
+					erase();
+					//updated values
+					rX += 5;
+					ct.fillStyle = "yellow";
+					ct.strokeStyle = "red";
+					ct.lineWidth = 3;
+					ct.fillRect(rX, rY, rW, rW);
+					ct.strokeRect(rX, rY, rW, rW);
+				}
+				else {
+					rX = -rW; // otherwise reset to left side
+				}
+
+				// request another update frame from the browser
+				requestAnimationFrame(an)
+			}
+
+			window.addEventListener("load", start)
+		</script>
+	</head>
+	<body>
+		<h1>Animation example with canvas</h1>
+		<div id="content">
+			<canvas id="testCanvas" width="400" height="400">
+				Canvas not supported
+			</canvas>
+		</div>
+	</body>
+</html>

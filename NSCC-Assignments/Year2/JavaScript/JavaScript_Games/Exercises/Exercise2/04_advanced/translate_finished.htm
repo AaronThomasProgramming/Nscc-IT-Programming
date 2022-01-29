@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Translate Transform</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+				margin: 25px;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script type="text/javascript">
+			window.addEventListener("load", function () {
+				var h = document.getElementById('Canvas1');
+				if (h && h.getContext) {
+					var k = h.getContext("2d");
+					if (k) {
+						k.fillStyle = "blue";
+						k.fillRect(0, 0, 100, 50);
+
+						// translate the origin to the middle of the canvas
+						//by the amounts specified by x, y
+						k.translate(k.canvas.width / 2, k.canvas.height / 2);
+
+						k.fillRect(0, 0, 100, 50);
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>The Translate Transform</h1>
+		<div id='content'>
+			<p>The translate transform simply repositions the origin of the canvas. In this demo, a rectangle is drawn at the default
+				origin of 0,0. A second rectangle is drawn at 0,0 after the translate transform has been applied.</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

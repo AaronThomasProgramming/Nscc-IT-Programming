@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Custom Transform</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+				margin: 25px;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script type="text/javascript">
+			window.onload = function () {
+				var k = document.getElementById('Canvas1');
+				if (k && k.getContext) {
+					var j = k.getContext("2d");
+					if (j) {
+						j.fillStyle = "blue";
+						j.fillRect(0, 0, 100, 50);
+
+						// now translate the origin to the middle of the canvas
+						// using a custom translation matrix
+						// (a translate operation is defined as:)
+						//  1  0  h              
+						//  0  1  g
+						//  0  0  1
+						var h = j.canvas.width / 2;
+						var g = j.canvas.height / 2;
+						j.save();
+						j.fillStyle = "red";
+						//add the transform matrix to the current canvas
+						j.transform(1, 0, 0, 1, h, g);
+						j.fillRect(0, 0, 100, 50);
+						j.restore();
+
+						// now let's set the current transform to a skewing one
+						// (a skew transform is defined as:)
+						//  1  m 0              
+						//  n 1  0
+						//  0  0  1
+						var m = 0.3;
+						var n = 0;
+						j.fillStyle = "green";
+						//set the canvas transform to the specified transform matrix
+						j.setTransform(1, n, m, 1, 0, 0);
+						j.fillRect(200, 20, 100, 50);
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>The Custom Transform</h1>
+		<div id='content'>
+			<p>The custom transform provides a way to define your own transforms using matrices. In this example, we re-create the
+				translate transform using a custom transform, then use another custom transform to create a new transform called "skew".
+			</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

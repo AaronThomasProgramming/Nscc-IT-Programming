@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Paths</title>
+		<style type="text/css">
+			#Canvas1 {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var e = document.getElementById('Canvas1');
+				if (e && e.getContext) {
+					var q = e.getContext("2d");
+					if (q) {
+						q.strokeStyle = "blue";
+						q.fillStyle = "red";
+						q.lineWidth = 5;
+
+						// draw an open path (not closed)
+						//clear the current internal path object and its sub-paths
+						q.beginPath();
+						q.moveTo(25, 175);
+						q.lineTo(50, 25);
+						q.lineTo(125, 50);
+						q.lineTo(175, 175);
+						q.stroke();
+
+						// draw a closed path
+						//clear the current internal path object and its sub-paths
+						q.beginPath();
+						q.moveTo(225, 175);
+						q.lineTo(250, 25);
+						q.lineTo(325, 50);
+						q.lineTo(375, 175);
+						//connect the current path, or sub-path, position with the first point on that path
+						q.closePath();
+						q.stroke();
+
+						// draw and fill an unclosed path
+						//clear the current internal path object and its sub-paths
+						q.beginPath();
+						q.moveTo(425, 175);
+						q.lineTo(450, 25);
+						q.lineTo(525, 50);
+						q.lineTo(575, 175);
+						//fill and stroke unclosed path
+						q.fill();
+						q.stroke();
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Paths</h1>
+		<div id="content">
+			<p>This example will draw paths, both open and closed</p>
+			<canvas id="Canvas1" width="700" height="300">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>

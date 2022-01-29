@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Drawing Lines</title>
+		<style type="text/css">
+			canvas {
+				border: dotted 1px black;
+			}
+		</style>
+		<link rel="stylesheet" href="../style.css" />
+		<script>
+			window.addEventListener("load", function () {
+				var q = document.getElementById('Canvas1');
+				//context set up
+				if (q && q.getContext) {
+					var e = q.getContext("2d");
+					if (e) {
+						// draw lines of varying widths
+						for (var i = 0; i < 10; i++) {
+							e.beginPath();
+							e.lineWidth = i + 1;
+							e.moveTo(25, 25 + i * 15);
+							e.lineTo(475, 25 + i * 15);
+							e.stroke();
+						}
+					}
+				}
+
+				// demonstrate the lineCap endings 
+				//moveTo and lineTo are used to perform operations on the drawing pen
+				//moveTo function positions the pen but does not draw.
+				 //lineTo function will draw a line 
+				var q = document.getElementById('Canvas2');
+				if (q && q.getContext) {
+					var e = q.getContext("2d");
+					if (e) {
+						// draw the guidelines
+						e.strokeStyle = "green";
+						e.lineWidth = 1;
+						e.beginPath();
+						e.moveTo(50, 20);
+						e.lineTo(50, 180);
+						e.moveTo(450, 20);
+						e.lineTo(450, 180);
+						e.stroke();
+
+						// draw lines using each lineCap;
+						e.lineWidth = 25;
+						e.strokeStyle = "black";
+						//set the line end cap type (butt, round, square)
+						e.lineCap = "butt";
+						e.beginPath();
+						e.moveTo(50, 50);
+						e.lineTo(450, 50);
+						e.stroke();
+						//set the line end cap type (butt, round, square)
+						e.lineCap = "round";
+						e.beginPath();
+						e.moveTo(50, 100);
+						e.lineTo(450, 100);
+						e.stroke();
+						//set the line end cap type (butt, round, square)
+						e.lineCap = "square";
+						e.beginPath();
+						e.moveTo(50, 150);
+						e.lineTo(450, 150);
+						e.stroke();
+					}
+				}
+
+				// Show the lineJoin variations
+				var q = document.getElementById('Canvas3');
+				if (q && q.getContext) {
+					var e = q.getContext("2d");
+					if (e) {
+						e.lineWidth = 15;
+						e.strokeStyle = "black";
+						//method to join lines default is miter
+						e.lineJoin = "round";
+						e.beginPath();
+						e.moveTo(25, 150);
+						e.lineTo(75, 50);
+						e.lineTo(125, 150);
+						e.stroke();
+						//method to join lines default is miter
+						e.lineJoin = "bevel";
+						e.beginPath();
+						e.moveTo(175, 150);
+						e.lineTo(225, 50);
+						e.lineTo(275, 150);
+						e.stroke();
+						//method to join lines default is miter
+						e.lineJoin = "miter";
+						e.beginPath();
+						e.moveTo(325, 150);
+						e.lineTo(375, 50);
+						e.lineTo(425, 150);
+						e.stroke();
+					}
+				}
+
+				// Show the lineDash variations
+				var q = document.getElementById('Canvas4');
+				if (q && q.getContext) {
+					var e = q.getContext("2d");
+					if (e) {
+						e.lineWidth = 15;
+						e.strokeStyle = "black";
+						//set number of spaces to create a dashed line
+						e.setLineDash([5, 10]);
+						e.beginPath();
+						e.moveTo(50, 50);
+						e.lineTo(450, 50);
+						e.stroke();
+						//set number of spaces to create a dashed line
+						e.setLineDash([15, 5]);
+						e.beginPath();
+						e.moveTo(50, 100);
+						e.lineTo(450, 100);
+						e.stroke();
+						//set number of spaces to create a dashed line
+						e.setLineDash([]);
+						e.beginPath();
+						e.moveTo(50, 150);
+						e.lineTo(450, 150);
+						e.stroke();
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<h1>Drawing Lines</h1>
+		<div id="content">
+			<p>This example will draw several styles of lines. This one shows basic line width</p>
+			<canvas id="Canvas1" width="500" height="200">Your browser does not support canvas.</canvas>
+
+			<p>This example shows different settings for lineCap</p>
+			<canvas id="Canvas2" width="500" height="200">Your browser does not support canvas.</canvas>
+
+			<p>This example shows different settings for lineJoin</p>
+			<canvas id="Canvas3" width="500" height="200">Your browser does not support canvas.</canvas>
+
+			<p>This example shows different settings for lineDash</p>
+			<canvas id="Canvas4" width="500" height="200">Your browser does not support canvas.</canvas>
+		</div>
+	</body>
+</html>
