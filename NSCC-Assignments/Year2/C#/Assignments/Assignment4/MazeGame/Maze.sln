@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Maze", "Maze.csproj", "{9F759632-CF84-4F37-B04B-7D183B90DC41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWall", "..\MyWall\MyWall.csproj", "{4A47E5F2-E79A-45F2-A4E5-7829C7AA527A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F759632-CF84-4F37-B04B-7D183B90DC41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F759632-CF84-4F37-B04B-7D183B90DC41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F759632-CF84-4F37-B04B-7D183B90DC41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F759632-CF84-4F37-B04B-7D183B90DC41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A47E5F2-E79A-45F2-A4E5-7829C7AA527A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A47E5F2-E79A-45F2-A4E5-7829C7AA527A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A47E5F2-E79A-45F2-A4E5-7829C7AA527A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A47E5F2-E79A-45F2-A4E5-7829C7AA527A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1278AF27-6081-4456-98F0-20212D0FA933}
+	EndGlobalSection
+EndGlobal
