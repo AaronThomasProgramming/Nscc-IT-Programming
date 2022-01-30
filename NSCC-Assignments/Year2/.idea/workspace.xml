@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="059c11ba-2d05-45a4-bbef-dec1c25172fd" name="Default Changelist" comment="Lab6 inprogress" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/lab5/assignment1/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="composer.json" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/lab5/assignment1" />
+  </component>
+  <component name="PhpServers">
+    <servers>
+      <server host="localhost" id="0e527d68-c6d8-4fc5-97e0-a9f1e34a0676" name="localhost" use_path_mappings="true">
+        <path_mappings>
+          <mapping local-root="$PROJECT_DIR$/lab0" remote-root="/var/www/html/lab0" />
+        </path_mappings>
+      </server>
+    </servers>
+  </component>
+  <component name="ProjectId" id="1hcDZYwXYTyCMxeBUypItkPnoBw" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../INET2005-Docker-DevEnvironment" />
+    <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\98adt\Desktop\wwwroot" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\assignment1" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\lab3\PartA" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\lab3" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\lab3\PartA\Step1" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\98adt\Desktop\wwwroot\demo" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\lab6\model\data" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\lab5" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\lab4" />
+      <recent name="C:\Users\98adt\Desktop\wwwroot\assignment1" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="valid.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/assignment1/valid.js" working-dir="$PROJECT_DIR$/assignment1">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.valid.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\98adt\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="059c11ba-2d05-45a4-bbef-dec1c25172fd" name="Default Changelist" comment="" />
+      <created>1600301544001</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1600301544001</updated>
+      <workItem from="1600301545980" duration="892000" />
+      <workItem from="1600305326723" duration="996000" />
+      <workItem from="1600307352691" duration="4548000" />
+      <workItem from="1600342654661" duration="19515000" />
+      <workItem from="1600687784190" duration="4243000" />
+      <workItem from="1600709567778" duration="1646000" />
+      <workItem from="1600860849480" duration="3003000" />
+      <workItem from="1601041161312" duration="50217000" />
+      <workItem from="1601294043803" duration="2869000" />
+      <workItem from="1601465540625" duration="6535000" />
+      <workItem from="1601648288116" duration="85204000" />
+      <workItem from="1601897520943" duration="6485000" />
+      <workItem from="1602071391699" duration="1480000" />
+      <workItem from="1602177370447" duration="2106000" />
+      <workItem from="1602304803076" duration="3415000" />
+      <workItem from="1602446365535" duration="160352000" />
+      <workItem from="1603335778669" duration="13000" />
+      <workItem from="1603728060694" duration="67429000" />
+      <workItem from="1603994332724" duration="978000" />
+      <workItem from="1604071588054" duration="17000" />
+      <workItem from="1604885021115" duration="63439000" />
+      <workItem from="1605072604487" duration="29244000" />
+      <workItem from="1605332087065" duration="5539000" />
+      <workItem from="1605506360891" duration="703000" />
+      <workItem from="1606152199396" duration="595000" />
+      <workItem from="1606534200507" duration="86000" />
+      <workItem from="1608310380591" duration="1589000" />
+      <workItem from="1642551163353" duration="14068000" />
+    </task>
+    <task id="LOCAL-00001" summary="Lab1 Done">
+      <created>1600392623377</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600392623377</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Lab2 Step1 Complete">
+      <created>1601083759637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1601083759637</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Lab2 Step1 Complete">
+      <created>1601084175811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601084175812</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Lab2 Step2 Complete">
+      <created>1601093373728</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1601093373728</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Lab2 Step3 Complete">
+      <created>1601093801512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601093801512</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Lab2 Step4 Complete">
+      <created>1601096660997</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1601096660997</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Lab2 PartB Complete">
+      <created>1601222186936</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1601222186936</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Lab2 PartC Step1 &amp; Step2 Complete">
+      <created>1601255661880</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1601255661880</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Lab2 PartC Step1 &amp; Step2 Completed">
+      <created>1601255940398</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1601255940398</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Lab2 Complete">
+      <created>1601258839631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1601258839631</updated>
+    </task>
+    <task id="LOCAL-00011" summary="lab3 done">
+      <created>1601877866853</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601877866853</updated>
+    </task>
+    <task id="LOCAL-00012" summary="assignment 3 push">
+      <created>1602739342893</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1602739342893</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Lab4 commit">
+      <created>1603169425697</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1603169425697</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Lab4 commit">
+      <created>1603169899236</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1603169899236</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Lab4 commit">
+      <created>1603251016119</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1603251016119</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Lab5 step 3 done">
+      <created>1603928213996</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1603928213997</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Lab6 working on it">
+      <created>1604953558529</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1604953558529</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Lab6 inprogress bbb">
+      <created>1604954123851</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1604954123851</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="roots">
+                    <value>
+                      <list>
+                        <option value="$PROJECT_DIR$/lab0" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="true" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Lab1 Done" />
+    <MESSAGE value="Lab2 Step1 Complete" />
+    <MESSAGE value="Lab2 Step2 Complete" />
+    <MESSAGE value="Lab2 Step3 Complete" />
+    <MESSAGE value="Lab2 Step4 Complete" />
+    <MESSAGE value="Lab2 PartB Complete" />
+    <MESSAGE value="Lab2 PartC Step1 &amp; Step2 Complete" />
+    <MESSAGE value="Lab2 PartC Step1 &amp; Step2 Completed" />
+    <MESSAGE value="Lab2 Complete" />
+    <MESSAGE value="lab3 done" />
+    <MESSAGE value="assignment 3 push" />
+    <MESSAGE value="Lab4 commit" />
+    <MESSAGE value="Lab5 step 3 done" />
+    <MESSAGE value="Lab6 working on it" />
+    <MESSAGE value="Lab6 inprogress bbb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lab6 inprogress bbb" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1492" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1642552102498">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1492" y="359" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1642552102498" />
+    <state x="1680" y="455" key="FileChooserDialogImpl" timestamp="1642552186944">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1680" y="455" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1642552186944" />
+  </component>
+</project>

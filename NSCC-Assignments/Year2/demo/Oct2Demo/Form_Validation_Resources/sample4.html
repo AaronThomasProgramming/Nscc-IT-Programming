@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script Form Sample Page 4</title>
+        <script src="sample4.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <form id="myForm" name="myForm" method="post" action="sampleTargetPage.html" onsubmit="return checkForm()">
+             <p>
+                <label>First Name
+                    <input type="text" name="firstName" id="firstName" onblur="anyText(this,'You must enter a first name','firstNameWarning')"/>
+                </label>&nbsp;&nbsp;<span id="firstNameWarning"></span><br />
+                <label>Last Name
+                    <input type="text" name="lastName" id="secondName" onblur="anyText(this,'You must enter a last name','lastNameWarning')"/>
+                </label>&nbsp;&nbsp;<span id="lastNameWarning"></span>
+            </p>
+            <p>
+                <label>Client Type <select name="clientTypeList" id="clientTypeList">
+                    <option value="select">Select One</option>
+                    <option value="residential">Residential</option>
+                     <option value="commercial">Commercial</option>
+                    <option value="platinum">Platinum Plus</option> </select>    </label>
+            </p>
+            <p>
+                <label>Submit      <input type="submit" name="submitButton" id="submitButton" value="Submit" /> </label>    <br />
+            </p>
+        </form>
+    </body>
+</html>

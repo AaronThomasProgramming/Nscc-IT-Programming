@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../lab6-AaronThomasProgramming" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/assignment1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab0" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lab5/assignment1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/labs7-10" vcs="Git" />
+  </component>
+</project>
