@@ -1,0 +1,51 @@
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ xZZZZZZZZ|ZZZZZ|Z|ZZZZZZZ|ZZZZZZZ|ZZZZZZZZZ|ZZZZZ|
++x+-+-+-+Z+Z+Z+Z+Z+Z+-+-+Z+Z+-+-+Z+Z+Z+-+-+Z+Z+-+Z+
+|xxxxx|Z|Z|Z|Z|Z|ZZZ|ZZZZZ|ZZZZZ|Z|Z|Z|ZZZ|Z|ZZZ|Z|
++-+-+x+Z+Z+Z+-+Z+-+-+Z+-+-+-+-+Z+-+Z+Z+Z+-+Z+-+Z+Z+
+|xxxxx|Z|Z|Z|ZZZ|ZZZZZ|ZZZZZZZ|ZZZ|Z|Z|ZZZ|ZZZ|Z|Z|
++x+-+-+Z+Z+Z+Z+-+Z+-+-+Z+-+Z+-+-+Z+Z+Z+Z+Z+-+Z+Z+Z+
+|xxx|ZZZZZ|Z|ZZZ|Z|ZZZ|ZZZ|ZZZ|Z|ZZZ|ZZZ|Z|ZZZ|Z|Z|
++-+x+Z+-+Z+Z+Z+-+Z+Z+Z+-+Z+-+Z+Z+-+-+-+-+Z+Z+-+-+Z+
+|xxx|Z|ZZZ|Z|ZZZZZ|Z|ZZZZZ|Z|Z|ZZZ|ZZZZZZZ|ZZZ|ZZZ|
++x+-+-+Z+-+Z+-+-+-+Z+-+-+-+Z+Z+-+Z+Z+-+-+Z+-+Z+Z+-+
+|x|   |ZZZ|ZZZ|ZZZ|Z|ZZZ|ZZZ|Z|ZZZ|ZZZZZ|Z|ZZZ|Z|Z|
++x+ + +-+Z+-+Z+-+Z+Z+Z+Z+Z+Z+Z+Z+-+-+-+Z+Z+-+-+Z+Z+
+|x| |   |ZZZZZ|ZZZ|ZZZ|Z|Z|Z|Z|Z|ZZZ|ZZZ|ZZZZZZZ|Z|
++x+-+-+ +-+-+Z+Z+-+-+-+Z+Z+-+Z+Z+-+Z+Z+-+-+Z+-+-+Z+
+|xxx| | |xxx|ZZZ|ZZZ|ZZZ|ZZZ|Z|ZZZ|ZZZ|ZZZ|Z|ZZZ|Z|
++-+x+ + +x+x+-+Z+Z+Z+-+-+Z+Z+Z+Z+Z+-+-+Z+Z+Z+Z+Z+Z+
+|  xxx|xxx|xxx|ZZZ|Z|ZZZ|Z|Z|Z|Z|ZZZ|ZZZ|Z|Z|Z|Z|Z|
++-+-+x+x+-+-+x+-+-+Z+Z+Z+Z+Z+Z+Z+-+Z+Z+-+-+Z+Z+Z+Z+
+|xxxxx|x|xxx|xxx| |ZZZ|ZZZ|ZZZZZ|ZZZ|ZZZ|ZZZZZ|ZZZ|
++x+-+-+x+x+x+-+x+ +-+-+-+-+-+-+-+Z+-+Z+Z+Z+-+-+-+-+
+|x|ZZZ|x|x|x|xxx|xxxxxxxxx|ZZZZZ|ZZZZZ|Z|ZZZ|ZZZZZ|
++x+Z+Z+x+x+x+x+Z+x+-+-+-+x+Z+-+Z+-+-+-+Z+-+Z+Z+-+Z+
+|xZZ|Z|x|x|xxx|Z|x|xxx| |x|Z|ZZZ|ZZZ|ZZZ|ZZZ|Z|ZZZ|
++x+-+-+x+x+-+-+-+x+x+x+ +x+Z+Z+-+Z+Z+Z+-+Z+-+-+Z+-+
+|x|xxxxx|xxx|xxxxx|x|xxxxx|Z|Z|ZZZ|Z|Z|ZZZ|ZZZ|ZZZ|
++x+x+-+-+-+x+x+-+-+x+-+-+-+-+Z+Z+-+Z+Z+Z+-+-+Z+Z+Z+
+|xxx|   |  xxx|   |xxxZZ|ZZZZZ|Z|ZZZ|Z|Z|ZZZ|Z|Z|Z|
++-+-+ + + +-+-+-+ +-+x+Z+Z+-+-+Z+Z+-+-+Z+Z+Z+Z+Z+Z+
+|     | |   |   | |xxx|ZZZ|ZZZZZ|ZZZ|ZZZ|Z|Z|Z|Z|Z|
++ +-+-+ +-+ + + + +x+-+-+-+Z+-+-+-+Z+Z+Z+Z+Z+Z+Z+-+
+|     | |   | |   |xxxZZZZZZ|ZZZZZZZ|Z|Z|Z|ZZZ|ZZZ|
++-+ + +-+ +-+ +-+-+-+x+-+Z+-+Z+-+-+-+Z+-+Z+-+-+-+Z+
+|   |       |   |xxxxx|ZZZ|ZZZ|ZZZ|ZZZZZ|ZZZZZZZZZ|
++ +-+-+-+-+ +-+ +x+-+-+Z+-+Z+Z+Z+Z+Z+Z+Z+Z+-+-+-+-+
+| |       | |   |xxxxx|ZZZ|Z|Z|Z|ZZZ|Z|Z|Z|ZZZ|ZZZ|
++ + + +-+ +-+ +-+-+-+x+-+Z+Z+-+Z+-+-+Z+Z+Z+Z+-+Z+Z+
+| | |   | |   |     |x|ZZZ|ZZZZZ|ZZZZZ|ZZZ|ZZZZZ|Z|
++ + +-+-+ + +-+ + +-+x+-+-+-+-+-+Z+Z+-+-+-+Z+-+-+-+
+|   |     |     |   |xxx|xxxxx|ZZZ|Z|ZZZZZZZZZZZZZ|
++-+-+ +-+-+ +-+-+-+ + +x+x+-+x+Z+-+-+Z+-+-+-+-+-+Z+
+|   | |   | |   | | | |x|x|xxx|Z|ZZZ|ZZZZZZZZZZZ|Z|
++ +-+ + + + + + + + +-+x+x+x+-+Z+Z+Z+-+-+-+-+-+-+Z+
+| |   | | |   | | |    xxx|x|Z|ZZZ|ZZZZZZZ|ZZZ|ZZZ|
++ + +-+-+ +-+-+ + +-+-+ +-+x+Z+-+-+-+Z+-+-+Z+Z+Z+-+
+|   |     | |   | | |     |x|ZZZ|xxx|ZZZZZ|Z|Z|Z| |
++ +-+ +-+-+ + +-+ + + +-+-+x+-+Z+x+x+-+-+Z+Z+Z+Z+ +
+| |   |   | | | | | |   |xxxZZZZ|x|x|xxx|ZZZ|ZZZ| |
++ + +-+ + + + + + + +-+ +x+-+-+-+x+x+x+x+-+-+-+-+ +
+|   |   |       |       |xxxxxxxxx|xxx|xxxxxxxxxxW|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
