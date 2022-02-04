@@ -32,7 +32,7 @@ namespace FinalUnitTesting
             pvm.Filter = "Charizard";
             pvm.PerformFiltering();
             
-            Assert.IsTrue(cards.Count == 2);
+            Assert.IsTrue(cards.Count == 1);
         }
 
         [TestMethod]
